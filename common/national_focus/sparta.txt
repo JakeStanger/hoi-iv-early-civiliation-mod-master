@@ -1,0 +1,43 @@
+focus_tree = {
+	id = spartan_focus
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = SPT
+		}
+	}
+
+	default = no
+
+	focus = {
+		id = SPT_demand_athens
+		icon = GFX_goal_generic_forceful_treaty
+		available = { is_puppet = no }
+		x = 16
+		y = 2
+		cost = 10
+		bypass = {
+			47 = { is_owned_by = SPT }
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				date < 1939.1.1
+			}
+		}
+		completion_reward = {
+			47 = { add_claim_by = SPT }
+			if = {
+				limit = {
+					ATH = { owns_state = 47 }
+				}
+				ATH = {
+					country_event = { id = athens.1 }
+				}
+			}
+		}
+	}

@@ -1,0 +1,48 @@
+###########################
+# Athens Events
+###########################
+
+add_namespace = athens
+
+#Spartan Ultimatum
+country_event = {
+	id = athens.1
+	title = athens.1.t
+	desc = athens.1.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = { # Accept demands
+		name = athens.1.a
+		ai_chance = { factor = 90 }
+		SPT = {
+			country_event = { days = 1 id = sparta.1 }
+		}
+	}
+	option = { # Refuse
+		name = athens.1.b
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		effect_tooltip = {
+			SPT = {
+				create_wargoal = {
+					type = take_state_focus
+					target = ATH
+					generator = { 47 }
+				}
+				country_event = { days = 1 id = sparta.2 }
+			}
+		}
+		hidden_effect = {
+			SPT = {
+				country_event = { days = 1 id = sparta.2 }
+			}
+		}
+	}
+}

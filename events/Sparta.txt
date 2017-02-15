@@ -1,0 +1,45 @@
+###########################
+# Sparta Events
+###########################
+
+add_namespace = sparta
+
+#Spartan Ultimatum
+country_event = {
+	id = sparta.1
+	title = sparta.1.t
+	desc = sparta.1.d
+	picture = GFX_report_event_vienna_award_hungary
+
+	is_triggered_only = yes
+
+	option = {
+		name = sparta.1.a
+		SPT = {
+			transfer_state = 47
+		}
+		hidden_effect = {
+			country_event = { days = 1 id = news.19 }
+		}
+	}
+}
+country_event = {
+	id = sparta.2
+	title = sparta.2.t
+	desc = sparta.2.d
+	picture = GFX_report_event_lithuania_army
+
+	is_triggered_only = yes
+
+	option = {
+		name = sparta.2.a
+		create_wargoal = {
+			type = take_state_focus
+			target = LIT
+			generator = { 47 }
+		}
+		hidden_effect = {
+			country_event = { days = 1 id = news.20 }
+		}
+	}
+}

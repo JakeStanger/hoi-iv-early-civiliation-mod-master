@@ -1,0 +1,54 @@
+ideas = {
+
+	country = {
+		dual_kings = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = dual_kings
+			
+			modifier = {
+				drift_defence_factor = 0.5
+				planning_speed = 0.25
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+
+		strong_military = {
+
+         		allowed = {
+            			always = yes
+         		}
+
+         		allowed_civil_war = {
+            			always = yes
+         		}
+
+         		removal_cost = -1
+
+         		picture = generic_morale_bonus      
+
+         		modifier = {
+            			conscription = 0.05         
+                 		army_morale_factor = 0.1      
+            			army_core_attack_factor = 0.2   
+            			army_core_defence_factor = 0.2
+			}
+		}
+	}
+
+
+
+
+
+}
