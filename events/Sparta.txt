@@ -19,7 +19,7 @@ country_event = {
 			transfer_state = 47
 		}
 		hidden_effect = {
-			country_event = { days = 1 id = news.19 }
+			country_event = { days = 1 id = news.286 }
 		}
 	}
 }
@@ -35,11 +35,11 @@ country_event = {
 		name = sparta.2.a
 		create_wargoal = {
 			type = take_state_focus
-			target = LIT
+			target = ATH
 			generator = { 47 }
 		}
 		hidden_effect = {
-			country_event = { days = 1 id = news.20 }
+			country_event = { days = 1 id = news.287 }
 		}
 	}
 }

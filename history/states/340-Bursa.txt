@@ -19,7 +19,7 @@ state={
 		victory_points = {
 			947 1 
 		}
-		add_core_of = TUR
+		add_core_of = PRS
 	}
 
 	provinces={

@@ -25,7 +25,7 @@ state= {
 				naval_base = 8
 			}
 		}
-		add_core_of = TUR
+		add_core_of = PRS
 	}
 	provinces=
 	{

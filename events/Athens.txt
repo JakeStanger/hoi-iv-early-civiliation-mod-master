@@ -15,7 +15,7 @@ country_event = {
 
 	option = { # Accept demands
 		name = athens.1.a
-		ai_chance = { factor = 90 }
+		ai_chance = { factor = 30 }
 		SPT = {
 			country_event = { days = 1 id = sparta.1 }
 		}
@@ -23,7 +23,7 @@ country_event = {
 	option = { # Refuse
 		name = athens.1.b
 		ai_chance = {
-			factor = 10
+			factor = 70
 			modifier = {
 				factor = 0
 				is_historical_focus_on = yes

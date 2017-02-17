@@ -15,21 +15,49 @@ focus_tree = {
 	focus = {
 		id = SPT_demand_athens
 		icon = GFX_goal_generic_forceful_treaty
-		available = { is_puppet = no }
-		x = 16
-		y = 2
-		cost = 10
+		will_lead_to_war_with = ATH
+		available = {
+			is_puppet = no
+			has_army_manpower = { size > 8000 } #??? div
+		cost = 12
 		bypass = {
-			47 = { is_owned_by = SPT }
+			OR = {
+				has_war_with = ATH
+				is_in_faction_with = ATH
+				NOT = {
+					85 = {
+						controller = {
+							original_tag = ATH
+						}
+						owner = {
+							original_tag = ATH
+						}
+					}
+				}
+			}
 		}
+		cancel_if_invalid = no
+		x = 0
+		y = 0
+		cost = 10
 		ai_will_do = {
 			factor = 10
 			modifier = {
 				factor = 0
-				date < 1939.1.1
+				OR = {
+					any_neighbor_country = {
+						has_war_with = SPT
+						NOT = { has_capitulated = yes }
+						strength_ratio = {
+							tag = SPT
+							ratio > 0.6
+						}
+					}
+				}
 			}
 		}
 		completion_reward = {
+			add_named_threat = { threat = 5 name = SPT_demand_athens }
 			47 = { add_claim_by = SPT }
 			if = {
 				limit = {

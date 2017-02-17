@@ -1818,6 +1818,18 @@
  news.285.a:0 "Perhaps this was the only way."
  news.285.b:0 "Freedom!"
  news.285.c:0 "We shall see if the peace lasts."
+ news.286.t:0 "Spartan Ultimatum."
+ news.286.desc: "Lord, the Spartans have demanded Athens cede the entirety of its lands - WIP."
+ news.286.a:0 "Democracy was doomed from the start."
+ news.286.b:0 "Now is the time."
+ news.286.c:0 "The Spartans playing into Persia's hands."
+ news.286.d:0 "Lord, the Spartans have demanded Athens cede the entirety of its lands - WIP."
+ news.287.t:0 "Spartan Ultimatum."
+ news.287.desc: "Lord, the Spartans have demanded Athens cede the entirety of its lands - WIP."
+ news.287.a:0 "The mob will betray them."
+ news.287.b:0 "They refuse glory."
+ news.287.c:0 "They Spartans are playing into Persia's hands."
+ news.287.d:0 "Lord, the Spartans have demanded Athens cede the entirety of its lands - WIP."
  ace_promoted.1.t:0 "Ace Pilot Promoted"
  ace_promoted.2.t:0 "A Wild Ace Appears"
  ace_promoted.1.d:0 "Few take as many risks as the brave pilots of the [Root.GetAdjective] air force. [From.GetName] [From.GetSurname], a skilled pilot known under the callsign [From.GetCallsign], has distinguished [From.GetHerselfHimself] in not only returning alive from the recent mission over [From.GetMissionRegion], but living through significant victories in many critical encounters.\n\nHeld up as a shining example of [Root.GetAdjective] courage, [From.GetName]'s recent promotion has been highly publicized. Although the people may view war as more hell than glory, many are glad to see that there are still heroes to rally behind."
@@ -2665,4 +2677,5 @@
  ###################################################
  sparta.1.t:0 "Spartan Ultimatum."
  sparta.1.d:0 "The weak Athenians have submitted to our supierior military might! Stability has been achieved."
+
  ###################################################
